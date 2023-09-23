@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  angular-app:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Asegúrate de que este sea el nombre de tu Dockerfile
+    container_name: node-app
+    ports:
+      - "8080:5000"
+    restart: always
